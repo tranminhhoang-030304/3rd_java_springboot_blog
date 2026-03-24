@@ -1,0 +1,48 @@
+server:
+  port: xxxx
+
+spring:
+  application:
+    name: your_springboot_name
+  datasource:
+    url: jdbc:mysql://your_host:your_port/your_db_name?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+    username: your_username_here
+    password: your_password_here
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  data:
+    redis:
+      host: your_host_redis
+      port: your_redis_port
+  rabbitmq:
+    host: your_host
+    port: your_rabbitmq_port
+    username: your_username_here
+    password: your_password_here
+  kafka:
+    bootstrap-servers: your_kafka_host:your_kafka_port
+    consumer:
+      group-id: data-analytics-group
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer # Giải mã JSON khi đọc
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "*"
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer # Mã hóa Object thành JSON khi ghi
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+management:
+  metrics:
+    tags:
+      application: ${spring.application.name}
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus # Mở cổng cho Prometheus vào lấy data
+  endpoint:
+    prometheus:
+      enabled: true

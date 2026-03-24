@@ -1,0 +1,55 @@
+Posts (Bài viết)
+
+id: number (primary key)
+title: string (tiêu đề bài viết)
+content: text (nội dung)
+author: string (tên tác giả)
+categoryId: number (foreign key)
+status: enum ('draft', 'published')
+createdAt: datetime
+updatedAt: datetime
+
+Categories (Chủ đề)
+
+id: number (primary key)
+name: string (tên category)
+description: string
+createdAt: datetime
+updatedAt: datetime
+
+Comments (Bình luận)
+
+id: number (primary key)
+postId: number (foreign key)
+author: string (tên người comment)
+content: text
+createdAt: datetime
+
+Relationships:
+
+1 Category có nhiều Posts (one-to-many)
+1 Post có nhiều Comments (one-to-many)
+
+API Endpoints:
+Categories:
+
+GET /categories - Lấy tất cả categories
+GET /categories/:id - Lấy 1 category và posts của nó
+POST /categories - Tạo category mới
+PUT /categories/:id - Update category
+DELETE /categories/:id - Xóa category
+
+Posts:
+
+GET /posts - Lấy tất cả posts (có filter theo category, status)
+GET /posts/:id - Lấy chi tiết 1 post kèm comments
+POST /posts - Tạo post mới
+PUT /posts/:id - Update post
+DELETE /posts/:id - Xóa post
+
+Comments:
+
+GET /posts/:postId/comments - Lấy comments của 1 post
+POST /posts/:postId/comments - Tạo comment mới
+DELETE /comments/:id - Xóa comment
+
