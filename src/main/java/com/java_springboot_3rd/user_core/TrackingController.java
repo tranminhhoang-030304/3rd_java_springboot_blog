@@ -1,12 +1,14 @@
 package com.java_springboot_3rd.user_core;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@ConditionalOnProperty(name = "app.features.kafka-tracking", havingValue = "true")
 @RequestMapping("/api/tracking")
 public class TrackingController {
 

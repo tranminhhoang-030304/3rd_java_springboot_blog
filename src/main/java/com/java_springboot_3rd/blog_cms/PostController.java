@@ -15,7 +15,7 @@ public class PostController {
     private PostService postService;
 
     @Autowired
-    private KafkaTemplate<String, Object> kafkaTemplate; // Nhúng Kafka vào đây
+    private TrackingService trackingService;
 
     // PUBLIC: Lọc bài viết (VD: /api/posts?categoryId=1&status=published)
     @GetMapping
@@ -30,12 +30,8 @@ public class PostController {
     public ResponseEntity<?> getPostById(@PathVariable Integer id) {
         try {
             Post post = postService.getPostById(id);
-
-            // BẮN TRACKING VÀO KAFKA (Dùng topic game_analytics_topic)
-            String trackingEvent = " Báo cáo: Có người vừa xem bài viết ID " + id + " - Tiêu đề: " + post.getTitle();
-            kafkaTemplate.send("blog_tracking_topic", trackingEvent);
+            trackingService.logPostView(id, post.getTitle());
             System.out.println(" [Kafka] Đã ghi nhận sự kiện đọc bài viết!");
-
             return ResponseEntity.ok(post);
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());

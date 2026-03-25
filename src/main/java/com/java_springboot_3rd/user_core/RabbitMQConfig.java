@@ -6,10 +6,12 @@ import org.springframework.amqp.core.DirectExchange;
 import org.springframework.amqp.core.Queue;
 import org.springframework.amqp.support.converter.Jackson2JsonMessageConverter;
 import org.springframework.amqp.support.converter.MessageConverter;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
+@ConditionalOnProperty(name = "app.features.rabbitmq-notify", havingValue = "true")
 public class RabbitMQConfig {
     public static final String QUEUE_NAME = "ecommerce_order_queue"; // 1. Tên của Hàng đợi (Hòm thư)
     public static final String EXCHANGE_NAME = "ecommerce_exchange"; // 2. Tên của Tổng đài phân loại

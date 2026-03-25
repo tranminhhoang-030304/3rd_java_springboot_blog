@@ -1,9 +1,11 @@
 package com.java_springboot_3rd.user_core;
 
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Component;
 
 @Component //khai báo
+@ConditionalOnProperty(name = "app.features.rabbitmq-notify", havingValue = "true")
 public class OrderWorker {
 
     /**

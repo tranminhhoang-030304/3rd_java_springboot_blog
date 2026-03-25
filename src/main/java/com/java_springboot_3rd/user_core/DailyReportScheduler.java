@@ -7,8 +7,8 @@ import java.time.LocalDateTime;
 @Component
 public class DailyReportScheduler {
 
-    // 1.TEST: Chạy lặp đi lặp lại mỗi 10 giây (10000 mili-giây)
-    @Scheduled(fixedRate = 10000)
+    // 1.TEST: Chạy lặp đi lặp lại mỗi 1h (3600000 mili-giây)
+    @Scheduled(fixedRate = 3600000)
     public void runTestJob() {
         System.out.println("[SCHEDULER] Hệ thống vừa tự động quét hệ thống lúc: " + LocalDateTime.now());
     }

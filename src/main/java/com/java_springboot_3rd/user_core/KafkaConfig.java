@@ -5,6 +5,7 @@ import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.apache.kafka.common.serialization.StringSerializer;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.annotation.EnableKafka;
@@ -19,6 +20,7 @@ import java.util.Map;
 
 @EnableKafka
 @Configuration
+@ConditionalOnProperty(name = "app.features.kafka-tracking", havingValue = "true")
 public class KafkaConfig {
 
     // 1. TẠO BĂNG CHUYỀN (TOPIC)

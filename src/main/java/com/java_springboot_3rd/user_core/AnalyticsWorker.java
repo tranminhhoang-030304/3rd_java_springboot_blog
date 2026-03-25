@@ -1,9 +1,11 @@
 package com.java_springboot_3rd.user_core;
 
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Component;
 
 @Component
+@ConditionalOnProperty(name = "app.features.kafka-tracking", havingValue = "true")
 public class AnalyticsWorker {
 
     // Kẹp dấu trang (offset) và trực trên "game_analytics_topic"

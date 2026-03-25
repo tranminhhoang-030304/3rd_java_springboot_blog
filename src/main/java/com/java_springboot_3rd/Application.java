@@ -15,8 +15,8 @@ public class Application {
     }
     /**
      http://localhost:8081/swagger-ui/index.html
-     http://localhost:9090/targets
-     http://localhost:15672/#/
-     http://localhost:3000
+     http://localhost:9090/targets     prometheus
+     http://localhost:15672/#/         rabbitmq
+     http://localhost:3000             grafana
      */
 }
