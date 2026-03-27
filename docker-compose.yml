@@ -54,10 +54,7 @@ services:
     depends_on:
       - loki
 
-  # ==========================================
-  # 3. KỊCH BẢN 1: MŨI ĐINH BA ELK STACK (ĐÃ NIÊM PHONG)
-  # Bỏ comment (#) nếu muốn triệu hồi quái vật ngốn RAM
-  # ==========================================
+  # 3. KỊCH BẢN 1: MŨI ĐINH BA ELK STACK
   # elasticsearch:
   #   image: docker.elastic.co/elasticsearch/elasticsearch:8.13.0
   #   container_name: my-elasticsearch
