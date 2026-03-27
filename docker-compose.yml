@@ -1,4 +1,6 @@
+version: '3.8'
 services:
+  # 1. MESSAGE BROKER & METRICS (GIỮ NGUYÊN)
   kafka:
     image: apache/kafka:3.7.0
     container_name: my-kafka
@@ -22,14 +24,67 @@ services:
     ports:
       - "9090:9090"
     volumes:
-      - ./prometheus.yml:/etc/prometheus/prometheus.yml # Nạp file cấu hình vừa tạo vào đây
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
 
   grafana:
-      image: grafana/grafana:latest
-      container_name: my-grafana
-      ports:
-        - "3000:3000"
-      environment:
-        - GF_SECURITY_ADMIN_PASSWORD=admin # Mật khẩu đăng nhập
-      depends_on:
-        - prometheus
+    image: grafana/grafana:latest
+    container_name: my-grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    depends_on:
+      - prometheus
+
+  # 2. LOGGING: LOKI & PROMTAIL
+  loki:
+    image: grafana/loki:2.9.2
+    container_name: my-loki
+    ports:
+      - "3100:3100"
+    command: -config.file=/etc/loki/local-config.yaml
+
+  promtail:
+    image: grafana/promtail:2.9.2
+    container_name: my-promtail
+    volumes:
+      - ./logs:/var/log/app_logs:ro # Trỏ vòi hút vào thư mục logs của Spring Boot
+      - ./promtail-config.yml:/etc/promtail/config.yml:ro
+    command: -config.file=/etc/promtail/config.yml
+    depends_on:
+      - loki
+
+  # ==========================================
+  # 3. KỊCH BẢN 1: MŨI ĐINH BA ELK STACK (ĐÃ NIÊM PHONG)
+  # Bỏ comment (#) nếu muốn triệu hồi quái vật ngốn RAM
+  # ==========================================
+  # elasticsearch:
+  #   image: docker.elastic.co/elasticsearch/elasticsearch:8.13.0
+  #   container_name: my-elasticsearch
+  #   ports:
+  #     - "9200:9200"
+  #   environment:
+  #     - discovery.type=single-node
+  #     - xpack.security.enabled=false
+  #     - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+  #
+  # kibana:
+  #   image: docker.elastic.co/kibana/kibana:8.13.0
+  #   container_name: my-kibana
+  #   ports:
+  #     - "5601:5601"
+  #   environment:
+  #     - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+  #   depends_on:
+  #     - elasticsearch
+  #
+  # logstash:
+  #   image: docker.elastic.co/logstash/logstash:8.13.0
+  #   container_name: my-logstash
+  #   environment:
+  #     - "LS_JAVA_OPTS=-Xms256m -Xmx256m"
+  #   volumes:
+  #     - ./logstash.conf:/usr/share/logstash/pipeline/logstash.conf:ro
+  #     - ./logs:/app/logs:ro
+  #   depends_on:
+  #     - elasticsearch

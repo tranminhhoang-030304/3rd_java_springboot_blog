@@ -17,6 +17,6 @@ public class Application {
      http://localhost:8081/swagger-ui/index.html
      http://localhost:9090/targets     prometheus
      http://localhost:15672/#/         rabbitmq
-     http://localhost:3000             grafana
+     http://localhost:3000             grafana (username: admin; password: 123456)
      */
 }

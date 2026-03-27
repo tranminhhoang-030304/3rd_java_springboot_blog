@@ -1,0 +1,100 @@
+27-03-2026 13:36:51.794 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.java_springboot_3rd.Application.logStarting.54 - Starting Application using Java 25.0.1 with PID 26092 (C:\xtel\java\3rd_java_springboot\target\classes started by Hoàng in C:\xtel\java\3rd_java_springboot)
+27-03-2026 13:36:51.798 [] [35m[main][0;39m [39mDEBUG[0;39m
+                    com.java_springboot_3rd.Application.logStarting.55 - Running with Spring Boot v4.0.3, Spring v7.0.5
+27-03-2026 13:36:51.799 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.java_springboot_3rd.Application.logStartupProfileInfo.652 - No active profile set, falling back to 1 default profile: "default"
+27-03-2026 13:36:52.920 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected.291 - Multiple Spring Data modules found, entering strict repository configuration mode
+27-03-2026 13:36:52.923 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn.145 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+27-03-2026 13:36:53.093 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn.213 - Finished Spring Data repository scanning in 162 ms. Found 4 JPA repository interfaces.
+27-03-2026 13:36:53.112 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected.291 - Multiple Spring Data modules found, entering strict repository configuration mode
+27-03-2026 13:36:53.114 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn.145 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+27-03-2026 13:36:53.128 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate.327 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.java_springboot_3rd.blog_cms.CategoryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+27-03-2026 13:36:53.128 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate.327 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.java_springboot_3rd.blog_cms.CommentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+27-03-2026 13:36:53.128 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate.327 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.java_springboot_3rd.blog_cms.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+27-03-2026 13:36:53.129 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate.327 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.java_springboot_3rd.user_core.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+27-03-2026 13:36:53.130 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn.213 - Finished Spring Data repository scanning in 5 ms. Found 0 Redis repository interfaces.
+27-03-2026 13:36:53.917 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.boot.tomcat.TomcatWebServer.initialize.114 - Tomcat initialized with port 8081 (http)
+27-03-2026 13:36:53.931 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.a.coyote.http11.Http11NioProtocol.log.168 - Initializing ProtocolHandler ["http-nio-8081"]
+27-03-2026 13:36:53.934 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.a.catalina.core.StandardService.log.168 - Starting service [Tomcat]
+27-03-2026 13:36:53.934 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.a.catalina.core.StandardEngine.log.168 - Starting Servlet engine: [Apache Tomcat/11.0.18]
+27-03-2026 13:36:54.008 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.b.w.c.s.WebApplicationContextInitializer.prepareWebApplicationContext.77 - Root WebApplicationContext: initialization completed in 2160 ms
+27-03-2026 13:36:54.196 [] [35m[main][0;39m [39mDEBUG[0;39m
+                    c.j.user_core.JwtFilter.init.236 - Filter 'jwtFilter' configured for use
+27-03-2026 13:36:54.662 [] [35m[main][0;39m [34mINFO [0;39m
+                    org.hibernate.orm.jpa.logPersistenceUnitInformation.102 - HHH008540: Processing PersistenceUnitInfo [name: default]
+27-03-2026 13:36:54.730 [] [35m[main][0;39m [34mINFO [0;39m
+                    org.hibernate.orm.core.logVersion.41 - HHH000001: Hibernate ORM core version 7.2.4.Final
+27-03-2026 13:36:55.211 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.o.j.p.SpringPersistenceUnitInfo.addTransformer.129 - No LoadTimeWeaver setup: ignoring JPA class transformer
+27-03-2026 13:36:55.243 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.zaxxer.hikari.HikariDataSource.getConnection.109 - HikariPool-1 - Starting...
+27-03-2026 13:36:55.414 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.zaxxer.hikari.pool.HikariPool.checkFailFast.580 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@32c114d9
+27-03-2026 13:36:55.416 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.zaxxer.hikari.HikariDataSource.getConnection.122 - HikariPool-1 - Start completed.
+27-03-2026 13:36:55.500 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.hibernate.orm.connections.pooling.logConnectionInfo.179 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java_core_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java_core_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+27-03-2026 13:36:56.395 [] [35m[main][0;39m [34mINFO [0;39m
+                    org.hibernate.orm.core.initiateService.53 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+27-03-2026 13:36:56.475 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory.464 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+27-03-2026 13:36:56.583 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.j.r.q.QueryEnhancerFactories.<clinit>.48 - Hibernate is in classpath; If applicable, HQL parser will be used.
+27-03-2026 13:36:57.355 [] [35m[main][0;39m [31mWARN [0;39m
+                    o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor.247 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+27-03-2026 13:36:57.467 [] [35m[main][0;39m [31mWARN [0;39m
+                    o.s.b.s.a.UserDetailsServiceAutoConfiguration.getOrDeducePassword.83 - 
+
+Using generated security password: 55b8a007-247a-42c9-b921-790938458d79
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+27-03-2026 13:36:57.475 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.configure.110 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+27-03-2026 13:36:57.676 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.v.b.OptionalValidatorFactoryBean.afterPropertiesSet.48 - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+27-03-2026 13:36:58.236 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.b.a.e.web.EndpointLinksResolver.<init>.60 - Exposing 3 endpoints beneath base path '/actuator'
+27-03-2026 13:36:58.309 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.a.coyote.http11.Http11NioProtocol.log.168 - Starting ProtocolHandler ["http-nio-8081"]
+27-03-2026 13:36:58.323 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.boot.tomcat.TomcatWebServer.start.240 - Tomcat started on port 8081 (http) with context path '/'
+27-03-2026 13:36:58.336 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.java_springboot_3rd.Application.logStarted.60 - Started Application in 7.129 seconds (process running for 7.845)
+27-03-2026 13:49:45.758 [] [35m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m
+                    o.s.boot.tomcat.GracefulShutdown.shutDownGracefully.54 - Commencing graceful shutdown. Waiting for active requests to complete
+27-03-2026 13:49:45.768 [] [35m[tomcat-shutdown][0;39m [34mINFO [0;39m
+                    o.s.boot.tomcat.GracefulShutdown.doShutdown.76 - Graceful shutdown complete
+27-03-2026 13:49:45.782 [] [35m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m
+                    o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy.693 - Closing JPA EntityManagerFactory for persistence unit 'default'
+27-03-2026 13:49:45.784 [] [35m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m
+                    com.zaxxer.hikari.HikariDataSource.close.349 - HikariPool-1 - Shutdown initiated...
+27-03-2026 13:49:45.791 [] [35m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m
+                    com.zaxxer.hikari.HikariDataSource.close.351 - HikariPool-1 - Shutdown completed.

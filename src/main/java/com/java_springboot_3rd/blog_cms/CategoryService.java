@@ -4,10 +4,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
-
+import lombok.extern.slf4j.Slf4j;
 import java.util.List;
 
 @Service
+@Slf4j
 public class CategoryService {
 
     @Autowired
@@ -16,7 +17,7 @@ public class CategoryService {
     // 1. Lấy danh sách (Có Redis Cache)
     @Cacheable(value = "categories")
     public List<Category> getAllCategories() {
-        System.out.println("🐌 [Redis Miss] Đang lội xuống MySQL lấy toàn bộ Chủ đề...");
+        log.info("🐌 [Redis Miss] Đang lội xuống MySQL lấy toàn bộ Chủ đề...");
         return categoryRepository.findAll();
     }
 

@@ -1,13 +1,15 @@
 package com.java_springboot_3rd.blog_cms;
 
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.core.context.SecurityContextHolder; // 🔴 Đã bổ sung import này
 import org.springframework.web.bind.annotation.*;
 
 @RestController
+@Slf4j
 @RequestMapping("/api/posts")
 public class PostController {
 
@@ -17,7 +19,7 @@ public class PostController {
     @Autowired
     private TrackingService trackingService;
 
-    // PUBLIC: Lọc bài viết (VD: /api/posts?categoryId=1&status=published)
+    // PUBLIC: Lọc bài viết
     @GetMapping
     public ResponseEntity<?> getAllPosts(
             @RequestParam(required = false) Integer categoryId,
@@ -25,28 +27,41 @@ public class PostController {
         return ResponseEntity.ok(postService.getAllPosts(categoryId, status));
     }
 
-    // PUBLIC: Xem chi tiết bài viết + BẮN KAFKA
+    // PUBLIC: Xem chi tiết bài viết
     @GetMapping("/{id}")
     public ResponseEntity<?> getPostById(@PathVariable Integer id) {
+        log.info("Có người dùng đang yêu cầu xem bài viết ID: {}", id);
         try {
+            if(id < 0){
+                log.warn("Warning: ID âm!!!!!");
+            }
             Post post = postService.getPostById(id);
             trackingService.logPostView(id, post.getTitle());
-            System.out.println(" [Kafka] Đã ghi nhận sự kiện đọc bài viết!");
             return ResponseEntity.ok(post);
         } catch (Exception e) {
+            log.error("Lỗi!!! Sập khi tìm bài viết: {}", e.getMessage());
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(e.getMessage());
         }
     }
 
-    // ADMIN: Quản lý bài viết
+    // ADMIN: Quản lý bài viết (Tạo mới bằng DTO)
     @PreAuthorize("isAuthenticated()")
     @PostMapping
-    public Post createPost(@RequestBody Post post) {
-        org.springframework.security.core.Authentication authentication = // Lấy thông tin người dùng đang đăng nhập từ Security
-                org.springframework.security.core.context.SecurityContextHolder.getContext().getAuthentication();
-        String currentPrincipalName = authentication.getName();// Lấy ra username
-        post.setAuthor(currentPrincipalName); // Gán tên tác giả vào Entity Post trước khi lưu
-        return postService.createPost(post); // Gọi Service lưu vào DB như bình thường
+    public ResponseEntity<?> createPost(@RequestBody PostRequestDTO postDTO) {
+        try {
+            String author = SecurityContextHolder.getContext().getAuthentication().getName();
+            Post newPost = postService.createPost(postDTO, author);
+            return ResponseEntity.status(HttpStatus.CREATED).body(newPost);
+
+        } catch (IllegalArgumentException e) { // Bắt lỗi Validation
+            log.error("Lỗi dữ liệu đầu vào: {}", e.getMessage());
+            // KHÔNG in cả cục StackTrace (dùng e.getMessage() thôi) để tránh việc Logback "hoảng loạn"
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(e.getMessage());
+
+        } catch (Exception e) { // Bắt lỗi hệ thống
+            log.error("Lỗi khi tạo bài viết: ", e);
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(e.getMessage());
+        }
     }
 
     @PreAuthorize("isAuthenticated()")

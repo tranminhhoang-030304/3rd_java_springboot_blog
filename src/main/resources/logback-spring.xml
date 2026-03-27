@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <property name="LOGS" value="logs"/>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{dd-MM-yyyy HH:mm:ss.SSS} [%X{traceId}] %magenta([%thread]) %highlight(%-5level)
+                %logger{36}.%M.%line - %msg%n
+            </pattern>
+        </encoder>
+    </appender>
+
+    <appender name="RollingFile"
+              class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOGS}/app.log</file>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <Pattern> <!-- [%X{traceId}] để đóng dấu 1 mã ID unique cho mỗi người, vd trace-hoang_123 để truy vấn lịch sử thao tác]-->
+                <Pattern>%d{dd-MM-yyyy HH:mm:ss.SSS} [%X{traceId}] %magenta([%thread]) %highlight(%-5level)
+                    %logger{36}.%M.%line - %msg%n
+                </Pattern>
+            </Pattern>
+        </encoder>
+
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- Thẻ <param name = "..." value = "..."> file xml là syntax cũ (deprecated), khuyên dùng cú pháp trực tiếp (direct syntax) -->
+            <fileNamePattern>logs/app.%d{yyyyMMdd-HH}.txt</fileNamePattern>
+        </rollingPolicy> <!-- Không ghi mãi thành 1 file mà sẽ đóng thành file lưu trữ theo từng khung giờ và tạo file app.log mới để ghi tiếp -->
+    </appender>
+
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="RollingFile"/>
+    </root>
+
+    <logger name="com.java_springboot_3rd" level="trace" additivity="false">
+        <appender-ref ref="STDOUT"/>
+        <appender-ref ref="RollingFile"/>
+    </logger>
+
+</configuration>

@@ -36,16 +36,27 @@ public class PostService {
                 .orElseThrow(() -> new IllegalArgumentException(" Không tìm thấy Bài viết có ID: " + id));
     }
 
-    // 3. Tạo bài viết
-    public Post createPost(Post post) {
-        // Kiểm tra xem Category có tồn tại không
-        if (post.getCategory() == null || post.getCategory().getId() == null) {
-            throw new IllegalArgumentException(" Bài viết phải thuộc về một Chủ đề (CategoryId)!");
+    // 3. Tạo bài viết (nhận DTO và author chuẩn chỉ)
+    @CacheEvict(value = "posts", allEntries = true) // Xóa cache danh sách khi có bài mới
+    public Post createPost(PostRequestDTO postDTO, String author) {
+        // 1. Kiểm tra DTO (Validate)
+        if (postDTO.getCategoryId() == null) {
+            throw new IllegalArgumentException("Bài viết phải thuộc về một Chủ đề (CategoryId)!");
         }
-        Category cat = categoryRepository.findById(post.getCategory().getId())
-                .orElseThrow(() -> new IllegalArgumentException(" Chủ đề không tồn tại!"));
 
-        post.setCategory(cat);
+        // 2. Đi tìm Chủ đề (Category) thật trong Database dựa vào ID Frontend gửi lên
+        Category category = categoryRepository.findById(postDTO.getCategoryId())
+                .orElseThrow(() -> new IllegalArgumentException("Không tìm thấy Chủ đề có ID: " + postDTO.getCategoryId()));
+
+        // 3. Mapping: Chuyển đổi DTO -> Entity
+        Post post = new Post();
+        post.setTitle(postDTO.getTitle());
+        post.setContent(postDTO.getContent());
+        post.setStatus(postDTO.getStatus());
+        post.setAuthor(author);
+        post.setCategory(category); // Lắp Object Category vào Entity
+
+        // 4. Lưu xuống Database
         return postRepository.save(post);
     }
 
@@ -53,10 +64,12 @@ public class PostService {
     @CacheEvict(value = "posts", key = "#id")
     public Post updatePost(Integer id, Post req) {
         Post post = getPostById(id);
-        verifyOwnership(post.getAuthor());
+        verifyOwnership(post.getAuthor()); // 🛡️ Bảo vệ: Chỉ chủ bài hoặc Admin mới được sửa
+
         if (req.getTitle() != null) post.setTitle(req.getTitle());
         if (req.getContent() != null) post.setContent(req.getContent());
         if (req.getStatus() != null) post.setStatus(req.getStatus());
+
         return postRepository.save(post);
     }
 
@@ -64,10 +77,11 @@ public class PostService {
     @CacheEvict(value = "posts", key = "#id")
     public void deletePost(Integer id) {
         Post post = getPostById(id);
-        verifyOwnership(post.getAuthor());
+        verifyOwnership(post.getAuthor()); // 🛡️ Bảo vệ: Chỉ chủ bài hoặc Admin mới được xóa
         postRepository.deleteById(id);
     }
 
+    // 🛡️ HÀM BẢO VỆ LÕI (Xác minh chính chủ)
     private void verifyOwnership(String resourceAuthor) {
         org.springframework.security.core.Authentication auth =
                 org.springframework.security.core.context.SecurityContextHolder.getContext().getAuthentication();
@@ -75,6 +89,7 @@ public class PostService {
         String currentUsername = auth.getName();
         boolean isAdmin = auth.getAuthorities().stream()
                 .anyMatch(a -> a.getAuthority().equals("ROLE_ADMIN"));
+
         if (!isAdmin && (resourceAuthor == null || !resourceAuthor.equals(currentUsername))) {
             throw new org.springframework.security.access.AccessDeniedException("Lỗi: không có quyền thao tác trên dữ liệu của người khác!");
         }

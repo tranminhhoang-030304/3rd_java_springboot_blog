@@ -1,0 +1,688 @@
+ 27-03-2026 09:12:11.779 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.java_springboot_3rd.Application.logStarting.54 - Starting Application using Java 25.0.1 with PID 2956 (C:\xtel\java\3rd_java_springboot\target\classes started by Hoàng in C:\xtel\java\3rd_java_springboot)
+27-03-2026 09:12:11.783 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.java_springboot_3rd.Application.logStartupProfileInfo.652 - No active profile set, falling back to 1 default profile: "default"
+27-03-2026 09:12:12.957 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected.291 - Multiple Spring Data modules found, entering strict repository configuration mode
+27-03-2026 09:12:12.959 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn.145 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+27-03-2026 09:12:13.146 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn.213 - Finished Spring Data repository scanning in 178 ms. Found 4 JPA repository interfaces.
+27-03-2026 09:12:13.169 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected.291 - Multiple Spring Data modules found, entering strict repository configuration mode
+27-03-2026 09:12:13.172 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn.145 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+27-03-2026 09:12:13.190 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate.327 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.java_springboot_3rd.blog_cms.CategoryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+27-03-2026 09:12:13.190 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate.327 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.java_springboot_3rd.blog_cms.CommentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+27-03-2026 09:12:13.192 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate.327 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.java_springboot_3rd.blog_cms.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+27-03-2026 09:12:13.192 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate.327 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.java_springboot_3rd.user_core.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+27-03-2026 09:12:13.192 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn.213 - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+27-03-2026 09:12:13.931 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.boot.tomcat.TomcatWebServer.initialize.114 - Tomcat initialized with port 8081 (http)
+27-03-2026 09:12:13.945 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.a.coyote.http11.Http11NioProtocol.log.168 - Initializing ProtocolHandler ["http-nio-8081"]
+27-03-2026 09:12:13.947 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.a.catalina.core.StandardService.log.168 - Starting service [Tomcat]
+27-03-2026 09:12:13.947 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.a.catalina.core.StandardEngine.log.168 - Starting Servlet engine: [Apache Tomcat/11.0.18]
+27-03-2026 09:12:14.010 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.b.w.c.s.WebApplicationContextInitializer.prepareWebApplicationContext.77 - Root WebApplicationContext: initialization completed in 2180 ms
+27-03-2026 09:12:14.711 [] [35m[main][0;39m [34mINFO [0;39m
+                    org.hibernate.orm.jpa.logPersistenceUnitInformation.102 - HHH008540: Processing PersistenceUnitInfo [name: default]
+27-03-2026 09:12:14.772 [] [35m[main][0;39m [34mINFO [0;39m
+                    org.hibernate.orm.core.logVersion.41 - HHH000001: Hibernate ORM core version 7.2.4.Final
+27-03-2026 09:12:15.230 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.o.j.p.SpringPersistenceUnitInfo.addTransformer.129 - No LoadTimeWeaver setup: ignoring JPA class transformer
+27-03-2026 09:12:15.264 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.zaxxer.hikari.HikariDataSource.getConnection.109 - HikariPool-1 - Starting...
+27-03-2026 09:12:15.426 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.zaxxer.hikari.pool.HikariPool.checkFailFast.580 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@628e0403
+27-03-2026 09:12:15.428 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.zaxxer.hikari.HikariDataSource.getConnection.122 - HikariPool-1 - Start completed.
+27-03-2026 09:12:15.517 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.hibernate.orm.connections.pooling.logConnectionInfo.179 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java_core_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java_core_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+27-03-2026 09:12:16.395 [] [35m[main][0;39m [34mINFO [0;39m
+                    org.hibernate.orm.core.initiateService.53 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+27-03-2026 09:12:16.467 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory.464 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+27-03-2026 09:12:16.554 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.j.r.q.QueryEnhancerFactories.<clinit>.48 - Hibernate is in classpath; If applicable, HQL parser will be used.
+27-03-2026 09:12:17.322 [] [35m[main][0;39m [31mWARN [0;39m
+                    o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor.247 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+27-03-2026 09:12:17.415 [] [35m[main][0;39m [31mWARN [0;39m
+                    o.s.b.s.a.UserDetailsServiceAutoConfiguration.getOrDeducePassword.83 - 
+
+Using generated security password: f0b5d2b0-1f4e-4256-851b-ad4b0cacbbf8
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+27-03-2026 09:12:17.423 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.configure.110 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+27-03-2026 09:12:17.660 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.v.b.OptionalValidatorFactoryBean.afterPropertiesSet.48 - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+27-03-2026 09:12:18.246 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.b.a.e.web.EndpointLinksResolver.<init>.60 - Exposing 3 endpoints beneath base path '/actuator'
+27-03-2026 09:12:18.315 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.a.coyote.http11.Http11NioProtocol.log.168 - Starting ProtocolHandler ["http-nio-8081"]
+27-03-2026 09:12:18.329 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.boot.tomcat.TomcatWebServer.start.240 - Tomcat started on port 8081 (http) with context path '/'
+27-03-2026 09:12:18.345 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.java_springboot_3rd.Application.logStarted.60 - Started Application in 7.137 seconds (process running for 7.687)
+27-03-2026 09:16:22.647 [] [35m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m
+                    o.s.boot.tomcat.GracefulShutdown.shutDownGracefully.54 - Commencing graceful shutdown. Waiting for active requests to complete
+27-03-2026 09:16:22.654 [] [35m[tomcat-shutdown][0;39m [34mINFO [0;39m
+                    o.s.boot.tomcat.GracefulShutdown.doShutdown.76 - Graceful shutdown complete
+27-03-2026 09:16:22.668 [] [35m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m
+                    o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy.693 - Closing JPA EntityManagerFactory for persistence unit 'default'
+27-03-2026 09:16:22.670 [] [35m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m
+                    com.zaxxer.hikari.HikariDataSource.close.349 - HikariPool-1 - Shutdown initiated...
+27-03-2026 09:16:22.677 [] [35m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m
+                    com.zaxxer.hikari.HikariDataSource.close.351 - HikariPool-1 - Shutdown completed.
+27-03-2026 09:20:37.299 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.java_springboot_3rd.Application.logStarting.54 - Starting Application using Java 25.0.1 with PID 9608 (C:\xtel\java\3rd_java_springboot\target\classes started by Hoàng in C:\xtel\java\3rd_java_springboot)
+27-03-2026 09:20:37.302 [] [35m[main][0;39m [39mDEBUG[0;39m
+                    com.java_springboot_3rd.Application.logStarting.55 - Running with Spring Boot v4.0.3, Spring v7.0.5
+27-03-2026 09:20:37.303 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.java_springboot_3rd.Application.logStartupProfileInfo.652 - No active profile set, falling back to 1 default profile: "default"
+27-03-2026 09:20:38.536 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected.291 - Multiple Spring Data modules found, entering strict repository configuration mode
+27-03-2026 09:20:38.538 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn.145 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+27-03-2026 09:20:38.704 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn.213 - Finished Spring Data repository scanning in 147 ms. Found 4 JPA repository interfaces.
+27-03-2026 09:20:38.726 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected.291 - Multiple Spring Data modules found, entering strict repository configuration mode
+27-03-2026 09:20:38.729 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn.145 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+27-03-2026 09:20:38.750 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate.327 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.java_springboot_3rd.blog_cms.CategoryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+27-03-2026 09:20:38.751 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate.327 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.java_springboot_3rd.blog_cms.CommentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+27-03-2026 09:20:38.752 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate.327 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.java_springboot_3rd.blog_cms.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+27-03-2026 09:20:38.752 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate.327 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.java_springboot_3rd.user_core.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+27-03-2026 09:20:38.753 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn.213 - Finished Spring Data repository scanning in 13 ms. Found 0 Redis repository interfaces.
+27-03-2026 09:20:39.519 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.boot.tomcat.TomcatWebServer.initialize.114 - Tomcat initialized with port 8081 (http)
+27-03-2026 09:20:39.535 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.a.coyote.http11.Http11NioProtocol.log.168 - Initializing ProtocolHandler ["http-nio-8081"]
+27-03-2026 09:20:39.538 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.a.catalina.core.StandardService.log.168 - Starting service [Tomcat]
+27-03-2026 09:20:39.539 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.a.catalina.core.StandardEngine.log.168 - Starting Servlet engine: [Apache Tomcat/11.0.18]
+27-03-2026 09:20:39.612 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.b.w.c.s.WebApplicationContextInitializer.prepareWebApplicationContext.77 - Root WebApplicationContext: initialization completed in 2255 ms
+27-03-2026 09:20:39.779 [] [35m[main][0;39m [39mDEBUG[0;39m
+                    c.j.user_core.JwtFilter.init.236 - Filter 'jwtFilter' configured for use
+27-03-2026 09:20:40.287 [] [35m[main][0;39m [34mINFO [0;39m
+                    org.hibernate.orm.jpa.logPersistenceUnitInformation.102 - HHH008540: Processing PersistenceUnitInfo [name: default]
+27-03-2026 09:20:40.341 [] [35m[main][0;39m [34mINFO [0;39m
+                    org.hibernate.orm.core.logVersion.41 - HHH000001: Hibernate ORM core version 7.2.4.Final
+27-03-2026 09:20:40.759 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.o.j.p.SpringPersistenceUnitInfo.addTransformer.129 - No LoadTimeWeaver setup: ignoring JPA class transformer
+27-03-2026 09:20:40.784 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.zaxxer.hikari.HikariDataSource.getConnection.109 - HikariPool-1 - Starting...
+27-03-2026 09:20:40.907 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.zaxxer.hikari.pool.HikariPool.checkFailFast.580 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6d76aa05
+27-03-2026 09:20:40.908 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.zaxxer.hikari.HikariDataSource.getConnection.122 - HikariPool-1 - Start completed.
+27-03-2026 09:20:40.978 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.hibernate.orm.connections.pooling.logConnectionInfo.179 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java_core_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java_core_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+27-03-2026 09:20:41.797 [] [35m[main][0;39m [34mINFO [0;39m
+                    org.hibernate.orm.core.initiateService.53 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+27-03-2026 09:20:41.863 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory.464 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+27-03-2026 09:20:41.944 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.j.r.q.QueryEnhancerFactories.<clinit>.48 - Hibernate is in classpath; If applicable, HQL parser will be used.
+27-03-2026 09:20:42.674 [] [35m[main][0;39m [31mWARN [0;39m
+                    o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor.247 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+27-03-2026 09:20:42.816 [] [35m[main][0;39m [31mWARN [0;39m
+                    o.s.b.s.a.UserDetailsServiceAutoConfiguration.getOrDeducePassword.83 - 
+
+Using generated security password: 91fc1ae7-baef-4ffc-86a4-14be61bc824c
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+27-03-2026 09:20:42.828 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.configure.110 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+27-03-2026 09:20:43.158 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.v.b.OptionalValidatorFactoryBean.afterPropertiesSet.48 - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+27-03-2026 09:20:43.953 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.b.a.e.web.EndpointLinksResolver.<init>.60 - Exposing 3 endpoints beneath base path '/actuator'
+27-03-2026 09:20:44.024 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.a.coyote.http11.Http11NioProtocol.log.168 - Starting ProtocolHandler ["http-nio-8081"]
+27-03-2026 09:20:44.042 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.boot.tomcat.TomcatWebServer.start.240 - Tomcat started on port 8081 (http) with context path '/'
+27-03-2026 09:20:44.056 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.java_springboot_3rd.Application.logStarted.60 - Started Application in 7.342 seconds (process running for 7.879)
+27-03-2026 09:24:30.724 [] [35m[http-nio-8081-exec-2][0;39m [34mINFO [0;39m
+                    o.a.c.c.C.[Tomcat].[localhost].[/].log.168 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+27-03-2026 09:24:30.724 [] [35m[http-nio-8081-exec-2][0;39m [34mINFO [0;39m
+                    o.s.web.servlet.DispatcherServlet.initServletBean.523 - Initializing Servlet 'dispatcherServlet'
+27-03-2026 09:24:30.729 [] [35m[http-nio-8081-exec-2][0;39m [34mINFO [0;39m
+                    o.s.web.servlet.DispatcherServlet.initServletBean.545 - Completed initialization in 3 ms
+27-03-2026 09:25:08.201 [] [35m[http-nio-8081-exec-7][0;39m [34mINFO [0;39m
+                    c.j.blog_cms.PostController.getPostById.33 - Có người dùng đang yêu cầu xem bài viết ID: 1
+27-03-2026 09:25:08.269 [] [35m[http-nio-8081-exec-7][0;39m [1;31mERROR[0;39m
+                    c.j.blog_cms.PostController.getPostById.43 - Lỗi!!! Sập khi tìm bài viết:  Không tìm thấy Bài viết có ID: 1
+27-03-2026 09:27:05.290 [] [35m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m
+                    o.s.boot.tomcat.GracefulShutdown.shutDownGracefully.54 - Commencing graceful shutdown. Waiting for active requests to complete
+27-03-2026 09:27:05.301 [] [35m[tomcat-shutdown][0;39m [34mINFO [0;39m
+                    o.s.boot.tomcat.GracefulShutdown.doShutdown.76 - Graceful shutdown complete
+27-03-2026 09:27:05.328 [] [35m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m
+                    o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy.693 - Closing JPA EntityManagerFactory for persistence unit 'default'
+27-03-2026 09:27:05.330 [] [35m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m
+                    com.zaxxer.hikari.HikariDataSource.close.349 - HikariPool-1 - Shutdown initiated...
+27-03-2026 09:27:05.339 [] [35m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m
+                    com.zaxxer.hikari.HikariDataSource.close.351 - HikariPool-1 - Shutdown completed.
+27-03-2026 09:28:27.535 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.java_springboot_3rd.Application.logStarting.54 - Starting Application using Java 25.0.1 with PID 21064 (C:\xtel\java\3rd_java_springboot\target\classes started by Hoàng in C:\xtel\java\3rd_java_springboot)
+27-03-2026 09:28:27.538 [] [35m[main][0;39m [39mDEBUG[0;39m
+                    com.java_springboot_3rd.Application.logStarting.55 - Running with Spring Boot v4.0.3, Spring v7.0.5
+27-03-2026 09:28:27.539 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.java_springboot_3rd.Application.logStartupProfileInfo.652 - No active profile set, falling back to 1 default profile: "default"
+27-03-2026 09:28:28.717 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected.291 - Multiple Spring Data modules found, entering strict repository configuration mode
+27-03-2026 09:28:28.718 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn.145 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+27-03-2026 09:28:28.891 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn.213 - Finished Spring Data repository scanning in 165 ms. Found 4 JPA repository interfaces.
+27-03-2026 09:28:28.911 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected.291 - Multiple Spring Data modules found, entering strict repository configuration mode
+27-03-2026 09:28:28.913 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn.145 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+27-03-2026 09:28:28.926 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate.327 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.java_springboot_3rd.blog_cms.CategoryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+27-03-2026 09:28:28.926 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate.327 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.java_springboot_3rd.blog_cms.CommentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+27-03-2026 09:28:28.927 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate.327 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.java_springboot_3rd.blog_cms.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+27-03-2026 09:28:28.927 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate.327 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.java_springboot_3rd.user_core.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+27-03-2026 09:28:28.927 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn.213 - Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+27-03-2026 09:28:29.914 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.boot.tomcat.TomcatWebServer.initialize.114 - Tomcat initialized with port 8081 (http)
+27-03-2026 09:28:29.933 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.a.coyote.http11.Http11NioProtocol.log.168 - Initializing ProtocolHandler ["http-nio-8081"]
+27-03-2026 09:28:29.937 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.a.catalina.core.StandardService.log.168 - Starting service [Tomcat]
+27-03-2026 09:28:29.937 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.a.catalina.core.StandardEngine.log.168 - Starting Servlet engine: [Apache Tomcat/11.0.18]
+27-03-2026 09:28:30.054 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.b.w.c.s.WebApplicationContextInitializer.prepareWebApplicationContext.77 - Root WebApplicationContext: initialization completed in 2465 ms
+27-03-2026 09:28:30.350 [] [35m[main][0;39m [39mDEBUG[0;39m
+                    c.j.user_core.JwtFilter.init.236 - Filter 'jwtFilter' configured for use
+27-03-2026 09:28:30.993 [] [35m[main][0;39m [34mINFO [0;39m
+                    org.hibernate.orm.jpa.logPersistenceUnitInformation.102 - HHH008540: Processing PersistenceUnitInfo [name: default]
+27-03-2026 09:28:31.058 [] [35m[main][0;39m [34mINFO [0;39m
+                    org.hibernate.orm.core.logVersion.41 - HHH000001: Hibernate ORM core version 7.2.4.Final
+27-03-2026 09:28:31.672 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.o.j.p.SpringPersistenceUnitInfo.addTransformer.129 - No LoadTimeWeaver setup: ignoring JPA class transformer
+27-03-2026 09:28:31.713 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.zaxxer.hikari.HikariDataSource.getConnection.109 - HikariPool-1 - Starting...
+27-03-2026 09:28:31.926 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.zaxxer.hikari.pool.HikariPool.checkFailFast.580 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6d76aa05
+27-03-2026 09:28:31.929 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.zaxxer.hikari.HikariDataSource.getConnection.122 - HikariPool-1 - Start completed.
+27-03-2026 09:28:32.032 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.hibernate.orm.connections.pooling.logConnectionInfo.179 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java_core_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java_core_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+27-03-2026 09:28:33.294 [] [35m[main][0;39m [34mINFO [0;39m
+                    org.hibernate.orm.core.initiateService.53 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+27-03-2026 09:28:33.380 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory.464 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+27-03-2026 09:28:33.509 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.j.r.q.QueryEnhancerFactories.<clinit>.48 - Hibernate is in classpath; If applicable, HQL parser will be used.
+27-03-2026 09:28:34.643 [] [35m[main][0;39m [31mWARN [0;39m
+                    o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor.247 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+27-03-2026 09:28:34.810 [] [35m[main][0;39m [31mWARN [0;39m
+                    o.s.b.s.a.UserDetailsServiceAutoConfiguration.getOrDeducePassword.83 - 
+
+Using generated security password: d49b2463-ce97-42d5-89db-cab55b06fe70
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+27-03-2026 09:28:34.821 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.configure.110 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+27-03-2026 09:28:35.238 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.v.b.OptionalValidatorFactoryBean.afterPropertiesSet.48 - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+27-03-2026 09:28:36.348 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.b.a.e.web.EndpointLinksResolver.<init>.60 - Exposing 3 endpoints beneath base path '/actuator'
+27-03-2026 09:28:36.469 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.a.coyote.http11.Http11NioProtocol.log.168 - Starting ProtocolHandler ["http-nio-8081"]
+27-03-2026 09:28:36.498 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.boot.tomcat.TomcatWebServer.start.240 - Tomcat started on port 8081 (http) with context path '/'
+27-03-2026 09:28:36.521 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.java_springboot_3rd.Application.logStarted.60 - Started Application in 9.561 seconds (process running for 10.116)
+27-03-2026 09:28:41.814 [] [35m[http-nio-8081-exec-2][0;39m [34mINFO [0;39m
+                    o.a.c.c.C.[Tomcat].[localhost].[/].log.168 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+27-03-2026 09:28:41.815 [] [35m[http-nio-8081-exec-2][0;39m [34mINFO [0;39m
+                    o.s.web.servlet.DispatcherServlet.initServletBean.523 - Initializing Servlet 'dispatcherServlet'
+27-03-2026 09:28:41.818 [] [35m[http-nio-8081-exec-2][0;39m [34mINFO [0;39m
+                    o.s.web.servlet.DispatcherServlet.initServletBean.545 - Completed initialization in 3 ms
+27-03-2026 09:32:18.939 [] [35m[http-nio-8081-exec-7][0;39m [1;31mERROR[0;39m
+                    o.a.c.c.C.[.[.[.[dispatcherServlet].log.170 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException:  Bài viết phải thuộc về một Chủ đề (CategoryId)!] with root cause
+java.lang.IllegalArgumentException:  Bài viết phải thuộc về một Chủ đề (CategoryId)!
+	at com.java_springboot_3rd.blog_cms.PostService.createPost(PostService.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:715)
+	at com.java_springboot_3rd.blog_cms.PostService$$SpringCGLIB$$0.createPost(<generated>)
+	at com.java_springboot_3rd.blog_cms.PostController.createPost(PostController.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.proceed(AuthorizationManagerBeforeMethodInterceptor.java:271)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.attemptAuthorization(AuthorizationManagerBeforeMethodInterceptor.java:266)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.invoke(AuthorizationManagerBeforeMethodInterceptor.java:197)
+	at org.springframework.security.config.annotation.method.configuration.DeferringMethodInterceptor.invoke(DeferringMethodInterceptor.java:44)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at com.java_springboot_3rd.blog_cms.PostController$$SpringCGLIB$$0.createPost(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235)
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:493)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:354)
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:86)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:132)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at com.java_springboot_3rd.user_core.JwtFilter.doFilterInternal(JwtFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:337)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+27-03-2026 09:32:47.613 [] [35m[http-nio-8081-exec-6][0;39m [31mWARN [0;39m
+                    o.s.w.s.m.s.DefaultHandlerExceptionResolver.logException.248 - Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('1' (code 49)): was expecting double-quote to start property name]
+27-03-2026 09:57:48.860 [] [35m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m
+                    o.s.boot.tomcat.GracefulShutdown.shutDownGracefully.54 - Commencing graceful shutdown. Waiting for active requests to complete
+27-03-2026 09:57:48.869 [] [35m[tomcat-shutdown][0;39m [34mINFO [0;39m
+                    o.s.boot.tomcat.GracefulShutdown.doShutdown.76 - Graceful shutdown complete
+27-03-2026 09:57:48.890 [] [35m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m
+                    o.s.o.j.LocalContainerEntityManagerFactoryBean.destroy.693 - Closing JPA EntityManagerFactory for persistence unit 'default'
+27-03-2026 09:57:48.893 [] [35m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m
+                    com.zaxxer.hikari.HikariDataSource.close.349 - HikariPool-1 - Shutdown initiated...
+27-03-2026 09:57:48.895 [] [35m[SpringApplicationShutdownHook][0;39m [34mINFO [0;39m
+                    com.zaxxer.hikari.HikariDataSource.close.351 - HikariPool-1 - Shutdown completed.
+27-03-2026 09:57:51.103 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.java_springboot_3rd.Application.logStarting.54 - Starting Application using Java 25.0.1 with PID 13352 (C:\xtel\java\3rd_java_springboot\target\classes started by Hoàng in C:\xtel\java\3rd_java_springboot)
+27-03-2026 09:57:51.107 [] [35m[main][0;39m [39mDEBUG[0;39m
+                    com.java_springboot_3rd.Application.logStarting.55 - Running with Spring Boot v4.0.3, Spring v7.0.5
+27-03-2026 09:57:51.107 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.java_springboot_3rd.Application.logStartupProfileInfo.652 - No active profile set, falling back to 1 default profile: "default"
+27-03-2026 09:57:52.304 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected.291 - Multiple Spring Data modules found, entering strict repository configuration mode
+27-03-2026 09:57:52.305 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn.145 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+27-03-2026 09:57:52.458 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn.213 - Finished Spring Data repository scanning in 144 ms. Found 4 JPA repository interfaces.
+27-03-2026 09:57:52.475 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.multipleStoresDetected.291 - Multiple Spring Data modules found, entering strict repository configuration mode
+27-03-2026 09:57:52.476 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn.145 - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+27-03-2026 09:57:52.492 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate.327 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.java_springboot_3rd.blog_cms.CategoryRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+27-03-2026 09:57:52.493 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate.327 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.java_springboot_3rd.blog_cms.CommentRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+27-03-2026 09:57:52.493 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate.327 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.java_springboot_3rd.blog_cms.PostRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+27-03-2026 09:57:52.493 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationExtensionSupport.isStrictRepositoryCandidate.327 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.java_springboot_3rd.user_core.UserRepository; If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository
+27-03-2026 09:57:52.493 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn.213 - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+27-03-2026 09:57:53.266 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.boot.tomcat.TomcatWebServer.initialize.114 - Tomcat initialized with port 8081 (http)
+27-03-2026 09:57:53.279 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.a.coyote.http11.Http11NioProtocol.log.168 - Initializing ProtocolHandler ["http-nio-8081"]
+27-03-2026 09:57:53.282 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.a.catalina.core.StandardService.log.168 - Starting service [Tomcat]
+27-03-2026 09:57:53.282 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.a.catalina.core.StandardEngine.log.168 - Starting Servlet engine: [Apache Tomcat/11.0.18]
+27-03-2026 09:57:53.361 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.b.w.c.s.WebApplicationContextInitializer.prepareWebApplicationContext.77 - Root WebApplicationContext: initialization completed in 2209 ms
+27-03-2026 09:57:53.624 [] [35m[main][0;39m [39mDEBUG[0;39m
+                    c.j.user_core.JwtFilter.init.236 - Filter 'jwtFilter' configured for use
+27-03-2026 09:57:54.155 [] [35m[main][0;39m [34mINFO [0;39m
+                    org.hibernate.orm.jpa.logPersistenceUnitInformation.102 - HHH008540: Processing PersistenceUnitInfo [name: default]
+27-03-2026 09:57:54.209 [] [35m[main][0;39m [34mINFO [0;39m
+                    org.hibernate.orm.core.logVersion.41 - HHH000001: Hibernate ORM core version 7.2.4.Final
+27-03-2026 09:57:54.701 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.o.j.p.SpringPersistenceUnitInfo.addTransformer.129 - No LoadTimeWeaver setup: ignoring JPA class transformer
+27-03-2026 09:57:54.731 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.zaxxer.hikari.HikariDataSource.getConnection.109 - HikariPool-1 - Starting...
+27-03-2026 09:57:54.897 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.zaxxer.hikari.pool.HikariPool.checkFailFast.580 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6d76aa05
+27-03-2026 09:57:54.900 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.zaxxer.hikari.HikariDataSource.getConnection.122 - HikariPool-1 - Start completed.
+27-03-2026 09:57:54.999 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.hibernate.orm.connections.pooling.logConnectionInfo.179 - HHH10001005: Database info:
+	Database JDBC URL [jdbc:mysql://localhost:3306/java_core_db?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true]
+	Database driver: MySQL Connector/J
+	Database dialect: MySQLDialect
+	Database version: 8.0.45
+	Default catalog/schema: java_core_db/undefined
+	Autocommit mode: undefined/unknown
+	Isolation level: REPEATABLE_READ [default REPEATABLE_READ]
+	JDBC fetch size: none
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+27-03-2026 09:57:55.991 [] [35m[main][0;39m [34mINFO [0;39m
+                    org.hibernate.orm.core.initiateService.53 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+27-03-2026 09:57:56.084 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.o.j.LocalContainerEntityManagerFactoryBean.buildNativeEntityManagerFactory.464 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+27-03-2026 09:57:56.209 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.d.j.r.q.QueryEnhancerFactories.<clinit>.48 - Hibernate is in classpath; If applicable, HQL parser will be used.
+27-03-2026 09:57:57.110 [] [35m[main][0;39m [31mWARN [0;39m
+                    o.s.b.j.a.JpaBaseConfiguration$JpaWebConfiguration.openEntityManagerInViewInterceptor.247 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+27-03-2026 09:57:57.251 [] [35m[main][0;39m [31mWARN [0;39m
+                    o.s.b.s.a.UserDetailsServiceAutoConfiguration.getOrDeducePassword.83 - 
+
+Using generated security password: 2e4149da-0e4a-45cf-ab49-ebc56a77182f
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+27-03-2026 09:57:57.262 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer.configure.110 - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+27-03-2026 09:57:57.559 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.v.b.OptionalValidatorFactoryBean.afterPropertiesSet.48 - Failed to set up a Bean Validation provider: jakarta.validation.NoProviderFoundException: Unable to create a Configuration, because no Jakarta Validation provider could be found. Add a provider like Hibernate Validator (RI) to your classpath.
+27-03-2026 09:57:58.387 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.b.a.e.web.EndpointLinksResolver.<init>.60 - Exposing 3 endpoints beneath base path '/actuator'
+27-03-2026 09:57:58.484 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.a.coyote.http11.Http11NioProtocol.log.168 - Starting ProtocolHandler ["http-nio-8081"]
+27-03-2026 09:57:58.509 [] [35m[main][0;39m [34mINFO [0;39m
+                    o.s.boot.tomcat.TomcatWebServer.start.240 - Tomcat started on port 8081 (http) with context path '/'
+27-03-2026 09:57:58.530 [] [35m[main][0;39m [34mINFO [0;39m
+                    com.java_springboot_3rd.Application.logStarted.60 - Started Application in 7.999 seconds (process running for 8.674)
+27-03-2026 09:58:56.644 [] [35m[http-nio-8081-exec-2][0;39m [34mINFO [0;39m
+                    o.a.c.c.C.[Tomcat].[localhost].[/].log.168 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+27-03-2026 09:58:56.644 [] [35m[http-nio-8081-exec-2][0;39m [34mINFO [0;39m
+                    o.s.web.servlet.DispatcherServlet.initServletBean.523 - Initializing Servlet 'dispatcherServlet'
+27-03-2026 09:58:56.648 [] [35m[http-nio-8081-exec-2][0;39m [34mINFO [0;39m
+                    o.s.web.servlet.DispatcherServlet.initServletBean.545 - Completed initialization in 4 ms
+27-03-2026 09:59:51.463 [] [35m[http-nio-8081-exec-3][0;39m [1;31mERROR[0;39m
+                    o.a.c.c.C.[.[.[.[dispatcherServlet].log.170 - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalArgumentException:  Bài viết phải thuộc về một Chủ đề (CategoryId)!] with root cause
+java.lang.IllegalArgumentException:  Bài viết phải thuộc về một Chủ đề (CategoryId)!
+	at com.java_springboot_3rd.blog_cms.PostService.createPost(PostService.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:715)
+	at com.java_springboot_3rd.blog_cms.PostService$$SpringCGLIB$$0.createPost(<generated>)
+	at com.java_springboot_3rd.blog_cms.PostController.createPost(PostController.java:56)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:359)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:158)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.proceed(AuthorizationManagerBeforeMethodInterceptor.java:271)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.attemptAuthorization(AuthorizationManagerBeforeMethodInterceptor.java:266)
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.invoke(AuthorizationManagerBeforeMethodInterceptor.java:197)
+	at org.springframework.security.config.annotation.method.configuration.DeferringMethodInterceptor.invoke(DeferringMethodInterceptor.java:44)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:719)
+	at com.java_springboot_3rd.blog_cms.PostController$$SpringCGLIB$$0.createPost(<generated>)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:252)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:184)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:934)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:853)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:86)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1000)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:903)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:649)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235)
+	at org.springframework.security.web.ObservationFilterChainDecorator$FilterObservation$SimpleFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:493)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$1(ObservationFilterChainDecorator.java:354)
+	at org.springframework.security.web.ObservationFilterChainDecorator.lambda$wrapSecured$0(ObservationFilterChainDecorator.java:86)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:132)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at com.java_springboot_3rd.user_core.JwtFilter.doFilterInternal(JwtFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:231)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.wrapFilter(ObservationFilterChainDecorator.java:244)
+	at org.springframework.security.web.ObservationFilterChainDecorator$AroundFilterObservation$SimpleAroundFilterObservation.lambda$wrap$0(ObservationFilterChainDecorator.java:337)
+	at org.springframework.security.web.ObservationFilterChainDecorator$ObservationFilter.doFilter(ObservationFilterChainDecorator.java:228)
+	at org.springframework.security.web.ObservationFilterChainDecorator$VirtualFilterChain.doFilter(ObservationFilterChainDecorator.java:141)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.ServerHttpObservationFilter.doFilterInternal(ServerHttpObservationFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1779)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
